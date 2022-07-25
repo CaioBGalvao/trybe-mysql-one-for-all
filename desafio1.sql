@@ -53,9 +53,9 @@ VALUES
   ('Fog');
 
 CREATE TABLE SpotifyClone.Following (
-    following_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     artist_id INT NOT NULL,
+    PRIMARY KEY  (user_id, artist_id),
     FOREIGN KEY (user_id)
         REFERENCES Users (user_id),
     FOREIGN KEY (artist_id)
@@ -175,10 +175,10 @@ VALUES
 
 
 CREATE TABLE SpotifyClone.Reproduction (
-    reproduction_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     reproduction_date DATETIME NOT NULL,
     song_id INT NOT NULL,
+    PRIMARY KEY (user_id , song_id),
     FOREIGN KEY (user_id)
         REFERENCES Users (user_id),
     FOREIGN KEY (song_id)
