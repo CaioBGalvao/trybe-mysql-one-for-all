@@ -5,7 +5,7 @@ CREATE DATABASE SpotifyClone;
 CREATE TABLE SpotifyClone.Subscription (
     subscription_id INT PRIMARY KEY AUTO_INCREMENT,
     subscription_name VARCHAR(20) NOT NULL,
-    subscription_price FLOAT(2) NOT NULL
+    subscription_price DECIMAL(3,2) NOT NULL
 )  ENGINE=INNODB;
 
 INSERT INTO SpotifyClone.Subscription (subscription_name, subscription_price)
