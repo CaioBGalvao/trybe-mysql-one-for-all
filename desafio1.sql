@@ -11,9 +11,10 @@ CREATE TABLE SpotifyClone.Subscription (
 INSERT INTO SpotifyClone.Subscription (subscription_name, subscription_price)
 VALUES
   ('gratuito', 0.00),
+  ('familiar', 7.99),
   ('universitário', 5.99),
-  ('pessoal', 6.99),
-  ('familiar', 7.99);
+  ('pessoal', 6.99);
+  
 
 CREATE TABLE SpotifyClone.Users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -28,15 +29,15 @@ CREATE TABLE SpotifyClone.Users (
   INSERT INTO SpotifyClone.Users (user_name, user_age, subscription_id , user_subscription_date)
 VALUES
   ('Thati', 23, 1 , '2019-10-20'),
-  ('Cintia', 35, 4 , '2017-12-30'),
-  ('Bill', 20, 2 , '2019-06-05'),
-  ('Roger', 45, 3 , '2020-05-13'),
-  ('Norman', 58, 3 ,   '2017-02-17'),
-  ('Patrick', 33, 4 , '2017-01-06'),
-  ('Vivian', 26, 2 , '2018-01-05'),
-  ('Carol', 19, 2 , '2018-02-14'),
+  ('Cintia', 35, 2 , '2017-12-30'),
+  ('Bill', 20, 3 , '2019-06-05'),
+  ('Roger', 45, 4 , '2020-05-13'),
+  ('Norman', 58, 4 ,   '2017-02-17'),
+  ('Patrick', 33, 2 , '2017-01-06'),
+  ('Vivian', 26, 3 , '2018-01-05'),
+  ('Carol', 19, 3 , '2018-02-14'),
   ('Angelina', 42 , 2 , '2018-04-29'),
-  ('Paul', 46, 4 , '2017-01-17');
+  ('Paul', 46, 2 , '2017-01-17');
 
 CREATE TABLE SpotifyClone.Artist (
     artist_id INT PRIMARY KEY AUTO_INCREMENT,
